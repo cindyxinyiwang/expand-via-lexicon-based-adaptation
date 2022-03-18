@@ -1,7 +1,9 @@
-# Expanding Pretrained Models to Thousands More Languages via Lexicon-based Adaptation [(ACL 2022 paper)](https://arxiv.org/abs/2203.09435)
+# Expanding Pretrained Models to Thousands More Languages via Lexicon-based Adaptation 
 
+# Intro
+This repository contains the code for our [(ACL 2022 paper)](https://arxiv.org/abs/2203.09435) that synthesizes monolingual and labeled data for languages with limited or not textural data. We use these synthetic data to adapt pretrained multilingual models to languages with constraint textural data, which leads to significant improvements for these languages.  
 
-# download prepared data
+# Download prepared data
 We prepared the extracted lexicons and other data used in the expriments and you can get it [here](https://drive.google.com/file/d/1PTzpZYdQNG-DgZtObmv8ljcUCziVJBnd/view?usp=sharing).
 To extract new lexicons from PanLex database directly, you can first download the sql database from [here](https://panlex.org/snapshot/), and run
 ```
@@ -19,4 +21,18 @@ where $LAN is a language code with a corresponding lexicon file under the folder
  
 # Pseudo labeled data
 
+
+## Citation
+Please cite our paper as:
+
+```
+@inproceedings{wang2022expand,
+    title={Expanding Pretrained Models to Thousands More Languages via Lexicon-based Adaptation},
+    author={Wang, Xinyi and
+            Ruder, Sebastian and
+            Neubig, Graham},
+    booktitle={ACL},
+    year={2022}
+}
+```
 
