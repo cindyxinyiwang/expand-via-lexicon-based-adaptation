@@ -20,7 +20,12 @@ where $LAN is a language code with a corresponding lexicon file under the folder
 
  
 # Pseudo labeled data
-
+For finetuning, please first download and prepare the task specific data following the [XTREME repo]()
+To generate synthetic data for a language and a task, use
+```
+python src/make_pseudo_label.py $LAN $TASK
+```
+where $TASK is could be [pos|panx] for [POS tagging|Wiki NER].
 
 ## Citation
 Please cite our paper as:
