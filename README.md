@@ -5,7 +5,7 @@ This repository contains the code for our [(ACL 2022 paper)](https://arxiv.org/a
 
 # Download prepared data
 We prepared the extracted lexicons and other data used in the expriments and you can get it [here](https://drive.google.com/file/d/1PTzpZYdQNG-DgZtObmv8ljcUCziVJBnd/view?usp=sharing).
-To extract new lexicons from PanLex database directly, you can first download the sql database from [here](https://panlex.org/snapshot/), and run
+To extract new lexicons from PanLex database directly, you can first download the sql database from [here](https://panlex.org/snapshot/)(in case the website doesn't work, [here](https://drive.google.com/file/d/1PRW7s1W2Q62nqAFVLY9SJG4d9hR0kWgB/view?usp=sharing) is the older version of the database we used), and run
 ```
 python src/panlex_extract_lexicon.py --source_language=eng --target_language=$LAN --output_directory=data/lexicons
 ```
